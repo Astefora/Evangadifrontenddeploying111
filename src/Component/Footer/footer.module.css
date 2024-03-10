@@ -1,0 +1,50 @@
+.footer__container {
+  position: relative;
+  bottom: 0;
+  
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3B455A;
+  color: white;
+  padding: 10px ; 
+  max-width: 1497px;
+  height: 100px;
+  margin-left: 3px;
+  /* margin-top: 800px; */
+ }
+
+.social__icons {
+  display: flex;
+}
+
+.footer__sections {
+  display: flex;
+  gap: 40px;
+  margin-right: 200px;
+}
+
+.footer__sections section {
+  flex: 1;
+}
+
+.footer__container img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.footer__sections h1 {
+  margin-bottom: 10px;
+}
+
+.icons {
+  flex-direction: column;
+  margin-left: 200px;
+}
+
+.useful {
+  margin-right: 250px;
+}
+
