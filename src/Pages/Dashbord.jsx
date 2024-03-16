@@ -48,7 +48,6 @@ function Dashboard() {
         </h3>
       </div>
       <h1>Question</h1>
-
       {showQuestionForm ? (
         <QuestionForm />
       ) : (
@@ -87,6 +86,9 @@ function Dashboard() {
                 </div>
                 <div className={classes.questionDescription}>
                   <strong>Description:</strong> {question.description}
+                </div>
+                <div className={classes.questionUsername}>
+                  <b>Username: {question.username}</b>
                 </div>
               </div>
               <hr />

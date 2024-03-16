@@ -49,7 +49,7 @@ function AnswerComponent() {
       );
 
       if (response.status === 200) {
-        setAnswers(response.data.answers || []);
+        setAnswers(response.data || []);
       } else {
         setMessage("Failed to fetch answers.");
       }
@@ -70,7 +70,7 @@ function AnswerComponent() {
         previouslyAnsweredQuestionInfo
       );
       setPreviouslyAnsweredQuestionId(previouslyAnsweredQuestion.questionid);
-      console.log(previouslyAnsweredQuestion.questionid);
+      console.log(previouslyAnsweredQuestion.questionid);;
     }
   }, []);
 
@@ -119,7 +119,7 @@ function AnswerComponent() {
       <div>
         {message && <p>{message}</p>}
         {answers.length > 0 ? (
-          <div>
+          <div style={{ display: "row" }}>
             {console.log(
               "previouslyAnsweredQuestionId",
               previouslyAnsweredQuestionId
@@ -131,15 +131,22 @@ function AnswerComponent() {
                 ans.questionid === previouslyAnsweredQuestionId && (
                   <div key={index} className={classes.answerItem}>
                     <PersonPinIcon
-                      style={{ marginRight: "10px", verticalAlign: "middle" }}
+                      style={{
+                        marginRight: "10px",
+                        verticalAlign: "middle",
+                        fontSize: "40px",
+                      }}
                     />
                     <div style={{ display: "inline-block" }}>
+                      <b>username: {ans.username}</b>
+                      <br />
                       <strong>Answer ID:</strong> {ans.answerid}
                       <br />
-                      <strong>User ID:</strong> {ans.userId}
+                      <strong>User ID:</strong> {ans.userid}
                       <br />
                       <strong>Answer:</strong> {ans.answer}
                       <br />
+                      <div>          </div>
                     </div>
                   </div>
                 )
