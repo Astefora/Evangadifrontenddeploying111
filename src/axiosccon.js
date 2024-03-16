@@ -6,7 +6,8 @@ const axiosBase = axios.create({
 
   // baseURL: "https://nice-pear-hedgehog-fez.cyclic.app",
   // baseURL: "https://calm-hare-galoshes.cyclic.app",
-  baseURL: "https://evangadibackendlast2024-7.onrender.com",
+  // baseURL: "https://evangadibackendlast2024-7.onrender.com",
+  baseURL: "https://evangadi0960.onrender.com",
 });
 
 export default axiosBase;
