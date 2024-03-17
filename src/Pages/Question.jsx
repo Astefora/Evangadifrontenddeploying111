@@ -16,7 +16,7 @@ function Question() {
       const token = localStorage.getItem("token");
 
       const response = await axios.post(
-        "http://localhost:4400/api/question/createQuestion",
+        "https://geospatial.cyclic.app/api/question/createQuestion",
         {
           title: title,
           description: description,

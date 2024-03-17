@@ -18,7 +18,7 @@ function Dashboard() {
         const token = localStorage.getItem("token");
 
         const response = await axios.get(
-          "http://localhost:4400/api/question/all-questions",
+          "https://geospatial.cyclic.app/api/question/all-questions",
           {
             headers: {
               Authorization: `Bearer ${token}`,

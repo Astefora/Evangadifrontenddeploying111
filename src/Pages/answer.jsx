@@ -17,7 +17,7 @@ function AnswerComponent() {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        `http://localhost:4400/api/answer/getTopQuestion`,
+        `https://geospatial.cyclic.app/api/answer/getTopQuestion`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -40,7 +40,7 @@ function AnswerComponent() {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        "http://localhost:4400/api/answer/allAnswers",
+        "https://geospatial.cyclic.app/api/answer/allAnswers",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -82,7 +82,7 @@ function AnswerComponent() {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.post(
-        `http://localhost:4400/api/answer/createAnswer/${questionId}`,
+        `https://geospatial.cyclic.app/api/answer/createAnswer/${questionId}`,
         { answer },
         {
           headers: {
